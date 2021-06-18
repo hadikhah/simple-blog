@@ -22,7 +22,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth','verified'])->name('dashboard');
 
 Route::get('/example',function(){
-	return view("this is example route");
+	return "this is example route";
 });
 
 require __DIR__.'/auth.php';
